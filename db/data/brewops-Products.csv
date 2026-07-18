@@ -1,13 +1,13 @@
-ID;name;category_ID;price
-b2c3685b-fd97-4702-a685-50ffc861ee70;Espresso;2d4eba9c-f623-4db5-9099-549817b34fe8;2.20
-470d58aa-342f-4e62-b5ff-30161f08a235;Americano;2d4eba9c-f623-4db5-9099-549817b34fe8;2.80
-4d3368f8-dc00-49a4-803d-02344b904e77;Cappuccino;2d4eba9c-f623-4db5-9099-549817b34fe8;3.40
-4c7f0fe2-b98c-4b33-83ae-dd7e268777a8;Flat White;2d4eba9c-f623-4db5-9099-549817b34fe8;3.60
-578a7c89-f404-4fd4-9429-01b67b194ea0;Caffe Latte;2d4eba9c-f623-4db5-9099-549817b34fe8;3.50
-4bee1ffe-331e-4606-90be-2686f8db3e82;Iced Latte;c5baffac-65ba-469d-98b3-9cb47da65c43;3.90
-e63fce8a-8ebf-4b09-b090-65b98151cabe;Cold Brew;c5baffac-65ba-469d-98b3-9cb47da65c43;3.70
-97721829-92b2-43f0-9c91-b7d86f8d3b3d;Earl Grey;e877694e-20b7-470c-8aeb-d05c2a56832f;2.50
-02d33e11-50da-497c-a27d-80e5986c31a2;Matcha Latte;e877694e-20b7-470c-8aeb-d05c2a56832f;4.20
-628d701c-bb02-4fa6-a183-8ac888013c4a;Butter Croissant;9632b382-3ba3-4798-b1da-e4cb5312c4ea;2.90
-a2f17ae1-3be9-470e-b288-de19aec02b26;Blueberry Muffin;9632b382-3ba3-4798-b1da-e4cb5312c4ea;3.10
-44840146-dbc0-4561-a810-017dbbe23aa3;Ham and Cheese Toastie;8dc0bfa7-8b6d-403e-8222-174e6b14541e;5.50
+ID;name;category_ID;price;description;imageUrl
+b2c3685b-fd97-4702-a685-50ffc861ee70;Espresso;2d4eba9c-f623-4db5-9099-549817b34fe8;2.20;Single 30ml shot pulled from our house blend. Intense, syrupy, the base of everything.;https://placehold.co/600x400?text=Espresso
+470d58aa-342f-4e62-b5ff-30161f08a235;Americano;2d4eba9c-f623-4db5-9099-549817b34fe8;2.80;Double shot lengthened with hot water. Same strength as filter, cleaner finish.;https://placehold.co/600x400?text=Americano
+4d3368f8-dc00-49a4-803d-02344b904e77;Cappuccino;2d4eba9c-f623-4db5-9099-549817b34fe8;3.40;Double shot with steamed milk and a deep layer of dense foam. Dusted with cocoa on request.;https://placehold.co/600x400?text=Cappuccino
+4c7f0fe2-b98c-4b33-83ae-dd7e268777a8;Flat White;2d4eba9c-f623-4db5-9099-549817b34fe8;3.60;Double ristretto with velvety microfoam. Smaller and stronger than a latte.;https://placehold.co/600x400?text=Flat+White
+578a7c89-f404-4fd4-9429-01b67b194ea0;Caffe Latte;2d4eba9c-f623-4db5-9099-549817b34fe8;3.50;Double shot with plenty of steamed milk and a thin foam cap. Our gentlest espresso drink.;https://placehold.co/600x400?text=Caffe+Latte
+4bee1ffe-331e-4606-90be-2686f8db3e82;Iced Latte;c5baffac-65ba-469d-98b3-9cb47da65c43;3.90;Double shot shaken over ice with cold milk. Served unsweetened by default.;https://placehold.co/600x400?text=Iced+Latte
+e63fce8a-8ebf-4b09-b090-65b98151cabe;Cold Brew;c5baffac-65ba-469d-98b3-9cb47da65c43;3.70;Steeped 16 hours cold. Smooth, low acidity, naturally sweet. Served over ice.;https://placehold.co/600x400?text=Cold+Brew
+97721829-92b2-43f0-9c91-b7d86f8d3b3d;Earl Grey;e877694e-20b7-470c-8aeb-d05c2a56832f;2.50;Black tea with bergamot, brewed 4 minutes at 96C. Milk or lemon on the side.;https://placehold.co/600x400?text=Earl+Grey
+02d33e11-50da-497c-a27d-80e5986c31a2;Matcha Latte;e877694e-20b7-470c-8aeb-d05c2a56832f;4.20;Ceremonial-grade matcha whisked smooth, topped with steamed milk. Hot or iced.;https://placehold.co/600x400?text=Matcha+Latte
+628d701c-bb02-4fa6-a183-8ac888013c4a;Butter Croissant;9632b382-3ba3-4798-b1da-e4cb5312c4ea;2.90;Baked in-house every morning. Flaky, deeply buttery. Warm on request.;
+a2f17ae1-3be9-470e-b288-de19aec02b26;Blueberry Muffin;9632b382-3ba3-4798-b1da-e4cb5312c4ea;3.10;Loaded with whole blueberries under a crunchy sugar top.;
+44840146-dbc0-4561-a810-017dbbe23aa3;Ham and Cheese Toastie;8dc0bfa7-8b6d-403e-8222-174e6b14541e;5.50;Sourdough, smoked ham, cheddar, pressed to order. Takes about 5 minutes.;https://placehold.co/600x400?text=Toastie

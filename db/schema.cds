@@ -9,6 +9,8 @@ entity Categories : cuid, managed {
 
 entity Products : cuid, managed {
     name : String(1111);
-    category : Association to one Categories;
+    description : String(1000);
     price : Decimal(9,2);
+    imageUrl: String(1111);
+    category : Association to one Categories;
 }
