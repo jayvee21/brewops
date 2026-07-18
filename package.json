@@ -19,6 +19,25 @@
       "[production]": {
         "auth": "xsuaa"
       },
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "emp": {
+              "password": "pwd",
+              "roles": ["Employee"]
+            },
+            "inv": {
+              "password": "pwd",
+              "roles": ["InventoryManager"]
+            },
+            "mgr": {
+              "password": "pwd",
+              "roles": ["Manager"]
+            }
+          }
+        }
+      },
       "destinations": true,
       "html5-repo": true
     }
