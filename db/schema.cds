@@ -20,8 +20,10 @@ entity UnitOfMeasures : CodeList {
     key code : String(10);
 }
 
+@assert.unique.oneVarietyPerCondiment : [name, variety]
 entity Condiments : cuid, managed {
-    name : String(1111);
+    name : String(111);
+    variety :String(111);
     unitOfMeasure : Association to one UnitOfMeasures;
     costPerUnit : Decimal(9, 4);
 }

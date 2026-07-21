@@ -1,13 +1,13 @@
-ID;name;unitOfMeasure_code;costPerUnit
-d25285c8-aaf3-477a-8d38-ac3bd3a7bb85;Coffee Beans;g;0.0280
-6d673ee2-e185-45cf-9ae0-59d7addad584;Whole Milk;ml;0.0015
-34633351-a906-495b-b6c6-62be2958578a;Oat Milk;ml;0.0028
-2ccaab99-50d1-4e03-9d28-f5eb0b81585d;Vanilla Syrup;pump;0.1500
-75cf74e0-919a-4b30-a887-ae72d3d2f077;Caramel Syrup;pump;0.1500
-68a2bba5-8229-47e2-8e03-7bbbeba337c5;Matcha Powder;g;0.3500
-a110a5d5-b81a-48d1-a8ea-195d9d8e0987;Cocoa Powder;g;0.0450
-0a8ae760-a14a-4f44-9cb2-bbbba8b200f9;Whipped Cream;ml;0.0060
-1241f031-44e5-46a8-a33b-b7e109935ea1;Earl Grey Tea Bag;pc;0.1200
-27dbb63d-89af-43e8-8e13-5b1f0afa380d;Ice;g;0.0008
-be70b224-5c22-4260-94e1-acaf9b97dee5;Filtered Water;ml;0.0001
-7bf2fdfc-ab8a-478a-ac5d-6398f15065d7;Dark Chocolate Shavings;g;0.0900
+ID;name;variety;unitOfMeasure_code;costPerUnit
+d25285c8-aaf3-477a-8d38-ac3bd3a7bb85;Coffee Beans;House Blend;g;0.0280
+6d673ee2-e185-45cf-9ae0-59d7addad584;Milk;Whole;ml;0.0015
+34633351-a906-495b-b6c6-62be2958578a;Milk;Oat;ml;0.0028
+2ccaab99-50d1-4e03-9d28-f5eb0b81585d;Syrup;Vanilla;pump;0.1500
+75cf74e0-919a-4b30-a887-ae72d3d2f077;Syrup;Caramel;pump;0.1500
+68a2bba5-8229-47e2-8e03-7bbbeba337c5;Matcha Powder;Ceremonial;g;0.3500
+a110a5d5-b81a-48d1-a8ea-195d9d8e0987;Cocoa Powder;;g;0.0450
+0a8ae760-a14a-4f44-9cb2-bbbba8b200f9;Whipped Cream;;ml;0.0060
+1241f031-44e5-46a8-a33b-b7e109935ea1;Tea Bag;Earl Grey;pc;0.1200
+27dbb63d-89af-43e8-8e13-5b1f0afa380d;Ice;;g;0.0008
+be70b224-5c22-4260-94e1-acaf9b97dee5;Water;Filtered;ml;0.0001
+7bf2fdfc-ab8a-478a-ac5d-6398f15065d7;Chocolate Shavings;Dark;g;0.0900
