@@ -12,6 +12,7 @@ entity Products : cuid, managed {
     description : String(1000);
     price : Decimal(9,2);
     imageUrl: String(1111);
+    isAvailable : Boolean default true;
     category : Association to one Categories;
     productCondiments : Composition of many ProductCondiments on productCondiments.product = $self;
     instructionSteps : Composition of many InstructionSteps on instructionSteps.product = $self;
@@ -27,6 +28,7 @@ entity Condiments : cuid, managed {
     variety :String(111);
     unitOfMeasure : Association to one UnitOfMeasures;
     costPerUnit : Decimal(9, 4);
+    isAvailable : Boolean default true;
 }
 
 @assert.unique.oneLinePerCondiment : [product, condiment]
