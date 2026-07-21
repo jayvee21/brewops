@@ -1,0 +1,19 @@
+ID;product_ID;stepNumber;instruction
+4eb20574-d7fb-4cc0-8c14-684473e8cfe9;b2c3685b-fd97-4702-a685-50ffc861ee70;1;Grind 9g of house blend to a fine espresso grind.
+b194d323-6bc9-4c04-9747-ea1b892ff477;b2c3685b-fd97-4702-a685-50ffc861ee70;2;Tamp evenly and lock the portafilter into the group head.
+86fc0441-3310-4087-bbf5-10c83132bea7;b2c3685b-fd97-4702-a685-50ffc861ee70;3;Pull the shot for 25-30 seconds and serve immediately.
+caeccd4c-4138-4336-bf12-5da934ca4add;4d3368f8-dc00-49a4-803d-02344b904e77;1;Grind and pull a double shot, 18g in, into the serving cup.
+a222534f-1207-43fe-96cc-a378296c20a3;4d3368f8-dc00-49a4-803d-02344b904e77;2;Steam 100ml of whole milk to a dense, thick microfoam.
+fcb6ea84-4ef2-4fd3-bce8-b0d3d2e0cd00;4d3368f8-dc00-49a4-803d-02344b904e77;3;Pour the milk to fill the cup, holding back the foam.
+afeb3c82-3ff9-49ee-ab07-b34a813c995b;4d3368f8-dc00-49a4-803d-02344b904e77;4;Spoon the reserved foam on top for a deep, even cap.
+ae2659f0-80a8-4c06-9017-11eed763b96b;578a7c89-f404-4fd4-9429-01b67b194ea0;1;Grind and pull a double shot, 18g in, into the serving cup.
+c4db9128-b0ea-4c39-9653-1357619016b6;578a7c89-f404-4fd4-9429-01b67b194ea0;2;Steam 220ml of whole milk to a smooth, light microfoam.
+3f1ace5f-c98d-43c3-9466-c472138f87a4;578a7c89-f404-4fd4-9429-01b67b194ea0;3;Pour the milk in a steady stream to build the layered look.
+95bbf8c0-7f58-4bd8-a529-7ef6e13e80b9;578a7c89-f404-4fd4-9429-01b67b194ea0;4;Finish with a thin foam cap and serve right away.
+1dedbe9c-5772-4fa9-b3de-6847e8755c55;4bee1ffe-331e-4606-90be-2686f8db3e82;1;Fill a serving glass with 100g of ice.
+3b0ce146-e5ae-4272-ab2f-5437efac711f;4bee1ffe-331e-4606-90be-2686f8db3e82;2;Grind and pull a double shot, 18g in, into a separate cup.
+f5b9677d-21b6-4d47-ab8f-866e3d85f8fa;4bee1ffe-331e-4606-90be-2686f8db3e82;3;Pour 200ml of cold whole milk over the ice.
+62c8b42a-3fed-4e54-b182-457b5f5760d3;4bee1ffe-331e-4606-90be-2686f8db3e82;4;Pour the espresso over the top last so it layers, then stir before serving.
+69520100-9c92-49f6-a648-ee0df08fe31e;02d33e11-50da-497c-a27d-80e5986c31a2;1;Sift 4g of ceremonial matcha into the cup to remove clumps.
+490d8861-92ce-4ee9-a5a7-f774bd33139a;02d33e11-50da-497c-a27d-80e5986c31a2;2;Whisk with a small splash of hot water into a smooth paste.
+c5d7790a-cf4d-4eff-922b-8ef9a3040eaa;02d33e11-50da-497c-a27d-80e5986c31a2;3;Steam 200ml of whole milk and pour in gently, whisking briefly to combine.

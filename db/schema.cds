@@ -14,6 +14,7 @@ entity Products : cuid, managed {
     imageUrl: String(1111);
     category : Association to one Categories;
     productCondiments : Composition of many ProductCondiments on productCondiments.product = $self;
+    instructionSteps : Composition of many InstructionSteps on instructionSteps.product = $self;
 }
 
 entity UnitOfMeasures : CodeList {
@@ -34,4 +35,11 @@ entity ProductCondiments : cuid, managed {
     condiment: Association to one Condiments;
     quantity : Decimal(7,2);
     lineCost : Decimal(11,4) = quantity * condiment.costPerUnit;
+}
+
+@assert.unique.oneStepPerNumber : [product, stepNumber]
+entity InstructionSteps : cuid, managed {
+    product : Association to one Products;
+    stepNumber: Integer;
+    instruction : String(5000);
 }
