@@ -28,4 +28,11 @@ service CatalogService @(path: '/catalog') {
         { grant: 'DELETE', to: ['Manager'] }
     ]
     entity Condiments as projection on db.Condiments;
+
+    @restrict: [
+        { grant: 'READ', to: ['Employee', 'InventoryManager', 'Manager'] },
+        { grant: ['UPDATE', 'CREATE'], to: ['InventoryManager', 'Manager'] },
+        { grant: 'DELETE', to: ['Manager'] }
+    ]
+    entity ProductCondiments as projection on db.ProductCondiments;
 }

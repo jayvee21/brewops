@@ -13,6 +13,7 @@ entity Products : cuid, managed {
     price : Decimal(9,2);
     imageUrl: String(1111);
     category : Association to one Categories;
+    productCondiments : Composition of many ProductCondiments on productCondiments.product = $self;
 }
 
 entity UnitOfMeasures : CodeList {
@@ -23,5 +24,12 @@ entity Condiments : cuid, managed {
     name : String(1111);
     unitOfMeasure : Association to one UnitOfMeasures;
     costPerUnit : Decimal(9, 4);
+}
 
+@assert.unique.oneLinePerCondiment : [product, condiment]
+entity ProductCondiments : cuid, managed {
+    product : Association to one Products;
+    condiment: Association to one Condiments;
+    quantity : Decimal(7,2);
+    lineCost : Decimal(11,4) = quantity * condiment.costPerUnit;
 }
