@@ -8,10 +8,10 @@ entity Categories : cuid, managed {
 }
 
 entity Products : cuid, managed {
-    name : String(1111);
-    description : String(1000);
+    name : String(200);
+    description : String(200);
     price : Decimal(9,2);
-    imageUrl: String(1111);
+    imageUrl: String(200);
     isAvailable : Boolean default true;
     category : Association to one Categories;
     productCondiments : Composition of many ProductCondiments on productCondiments.product = $self;
