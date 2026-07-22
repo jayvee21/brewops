@@ -13,7 +13,10 @@ service CatalogService @(path: '/catalog') {
         { grant: ['UPDATE', 'CREATE'], to: ['InventoryManager', 'Manager'] },
         { grant: 'DELETE', to: ['Manager'] }
     ]
-    entity Products as projection on db.Products;
+    entity Products as projection on db.Products {
+        *,
+        case when isAvailable = true then 3 else 1 end as availabilityCriticality : Integer
+    };
 
     @restrict: [
         { grant: 'READ', to: ['Employee', 'InventoryManager', 'Manager'] },

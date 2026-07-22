@@ -51,7 +51,6 @@ annotate service.Products with {
             ]
         }
     );
-
 }
 
 // Fiter bar - Category, display the category name instead of the ID
@@ -90,6 +89,89 @@ annotate service.Products with @(
         {
             $Type: 'UI.DataField',
             Value: isAvailable,
+            Criticality: availabilityCriticality
         }
     ]
+);
+
+// Product grouping
+annotate service.Products with @(
+    UI.PresentationVariant: {
+        $Type : 'UI.PresentationVariantType',
+        GroupBy: [category.name],
+        SortOrder: [
+            { $Type: 'Common.SortOrderType', Property: category.name },
+            { $Type: 'Common.SortOrderType', Property: name },
+        ],
+        Visualizations: ['@UI.LineItem']
+    }
+);
+
+// ---------- Labels for the object page tables ------------
+annotate service.Condiments with {
+    name @title: 'Ingredient';
+    variety @title: 'Variety';
+}
+
+annotate service.ProductCondiments with {
+    quantity @title: 'Quantity';
+}
+
+annotate service.InstructionSteps with {
+    stepNumber @title: 'Step';
+    instruction @title: 'Instruction';
+}
+
+annotate service.Products with {
+    availabilityCriticality @UI.Hidden;
+}
+
+// ----------- Object Page -----------
+annotate service.Products with @(
+    UI.HeaderInfo: {
+        $Type: 'UI.HeaderInfoType',
+        TypeName: 'Product',
+        TypeNamePlural: 'Menu',
+        Title: { $Type: 'UI.DataField', Value: name },
+        Description: { $Type: 'UI.DataField', Value: category.name },
+        ImageUrl: imageUrl
+    },
+
+    UI.FieldGroup #Details: {
+        $Type: 'UI.FieldGroupType',
+        Data : [
+            { $Type: 'UI.DataField', Value: description },
+            { $Type: 'UI.DataField', Value: price },
+            { $Type: 'UI.DataField', Value: category_ID },
+            { $Type: 'UI.DataField', Value: isAvailable, Criticality: availabilityCriticality },
+        ]
+    },
+
+    UI.Facets: [
+        { $Type: 'UI.ReferenceFacet', ID: 'DetailsFacet', Label: 'Details', Target: '@UI.FieldGroup#Details' },
+        { $Type: 'UI.ReferenceFacet', ID: 'RecipeFacet', Label: 'Recipe', Target: 'productCondiments/@UI.LineItem' },
+        { $Type: 'UI.ReferenceFacet', ID: 'StepsFacet', Label: 'Preparation', Target: 'instructionSteps/@UI.PresentationVariant' },
+    ]
+);
+
+// ---------- B004: recipe lines (no cost fields — Employee-visible) ----------
+annotate service.ProductCondiments with @(
+    UI.LineItem: [
+        { $Type: 'UI.DataField', Value: condiment.name },
+        { $Type: 'UI.DataField', Value: condiment.variety },
+        { $Type: 'UI.DataField', Value: quantity }
+    ]
+);
+
+// ---------- B005: instruction steps ----------
+annotate service.InstructionSteps with @(
+    UI.LineItem: [
+        { $Type: 'UI.DataField', Value: stepNumber },
+        { $Type: 'UI.DataField', Value: instruction }
+    ],
+    UI.PresentationVariant: {
+        $Type         : 'UI.PresentationVariantType',
+        SortOrder     : [ { $Type: 'Common.SortOrderType', Property: stepNumber } ],
+        Visualizations: [ '@UI.LineItem' ]
+    }
 );
