@@ -1,7 +1,7 @@
 {
   "_version": "1.86.0",
   "sap.app": {
-    "id": "brewops.counter.counter",
+    "id": "brewops.counter",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "brewops.counter.counter.i18n.i18n"
+          "bundleName": "brewops.counter.i18n.i18n"
         }
       },
       "": {
@@ -114,6 +114,17 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "ProductColumn": {
+                      "header": "Product",
+                      "position": {
+                        "placement": "Before",
+                        "anchor": "DataField::category::name"
+                      },
+                      "template": "brewops.counter.ext.fragment.ProductCell",
+                      "properties": ["name", "description", "imageUrl"]
+                    }
                   }
                 }
               }

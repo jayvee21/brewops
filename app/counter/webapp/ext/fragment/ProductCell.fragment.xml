@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <HBox alignItems="Center">
+        <Avatar
+            src="{imageUrl}"
+            displaySize="S"
+            displayShape="Square"
+            fallbackIcon="sap-icon://meal"
+            class="sapUiTinyMarginEnd" />
+        <VBox>
+            <Title text="{name}" level="H6" wrapping="true" />
+            <Text text="{description}" maxLines="2" />
+        </VBox>
+    </HBox>
+</core:FragmentDefinition>

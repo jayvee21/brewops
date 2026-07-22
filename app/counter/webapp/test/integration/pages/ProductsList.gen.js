@@ -25,7 +25,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'brewops.counter.counter',
+            appId: 'brewops.counter',
             componentId: 'ProductsList',
             contextPath: '/Products'
         },

@@ -8,7 +8,7 @@
     "appName": "counter",
     "appTitle": "Menu & Orders",
     "appDescription": "Browse the coffee menu, look up drink recipes and preparation steps, and take customer orders.",
-    "appNamespace": "brewops.counter",
+    "appNamespace": "brewops",
     "ui5Theme": "sap_horizon",
     "ui5Version": "1.150.0",
     "enableEslint": true,

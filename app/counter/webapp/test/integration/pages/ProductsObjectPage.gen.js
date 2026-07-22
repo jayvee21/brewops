@@ -32,7 +32,7 @@ sap.ui.define(['sap/fe/test/ObjectPage', 'sap/ui/test/actions/Press'], function(
 
     return new ObjectPage(
         {
-            appId: 'brewops.counter.counter',
+            appId: 'brewops.counter',
             componentId: 'ProductsObjectPage',
             contextPath: '/Products'
         },

@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("brewops.counter.counter.Component", {
+        return Component.extend("brewops.counter.Component", {
             metadata: {
                 manifest: "json"
             }

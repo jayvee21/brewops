@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: brewops.counter.counter
+  name: brewops.counter
 type: application
 builder:
   resources:
