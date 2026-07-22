@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Jul 22 2026 14:35:16 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/catalog/",
+    "appName": "counter",
+    "appTitle": "Menu & Orders",
+    "appDescription": "Browse the coffee menu, look up drink recipes and preparation steps, and take customer orders.",
+    "appNamespace": "brewops.counter",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.150.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.29.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Products"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/counter/webapp/index.html"
+  }
+}
